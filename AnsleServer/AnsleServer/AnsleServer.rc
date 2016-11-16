@@ -1,0 +1,275 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\AnsleServer.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\AnsleServer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 AnsleServer"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "AnsleServer，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_ANSLESERVER_DIALOG DIALOGEX 0, 0, 747, 291
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "远程医疗监护--服务器端"
+FONT 9, "MS Shell Dlg", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "公网IP服务器操作区",IDC_STATIC,396,7,152,277
+    GROUPBOX        "其它生命体征数据显示区",IDC_STATIC,7,179,382,105
+    GROUPBOX        "心电显示区",IDC_STATIC,7,7,382,172
+    LTEXT           "服务器端口号:",IDC_STATIC,401,22,45,8
+    PUSHBUTTON      "监听",MONITOR,401,38,61,19
+    PUSHBUTTON      "关闭",CLOSE,480,38,60,19
+    LTEXT           "客户端连接列表:",IDC_STATIC,401,64,61,9
+    EDITTEXT        LOCALPORT,449,19,91,14,ES_AUTOHSCROLL
+    LTEXT           "服务器收到的数据列表:",IDC_STATIC,401,119,79,8
+    LISTBOX         RECEIVELIST,402,128,138,151,LBS_HASSTRINGS | LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
+    LISTBOX         CONNECTLIST,401,75,139,47,LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
+    LTEXT           "静态",IDC_LED,52,202,50,31,SS_CENTERIMAGE | WS_BORDER,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "静态",IDC_LED1,67,241,35,30,SS_CENTERIMAGE | WS_BORDER,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    GROUPBOX        "血压参数显示",IDC_STATIC,13,189,122,90
+    LTEXT           "收缩压:",IDC_STATIC,20,202,22,31,SS_CENTERIMAGE
+    LTEXT           "舒张压:",IDC_STATIC,20,241,22,30,SS_CENTERIMAGE
+    LTEXT           "mmHg",IDC_STATIC,106,223,20,10
+    LTEXT           "mmHg",IDC_STATIC,106,263,20,8
+    LTEXT           "静态",IDC_LED2,198,226,34,30,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "血氧饱和度:",IDC_STATIC,153,226,37,30,SS_CENTERIMAGE
+    LTEXT           "%",IDC_STATIC,237,226,15,30,SS_CENTERIMAGE
+    GROUPBOX        "血氧饱和度参数显示",IDC_STATIC,142,189,118,90
+    LTEXT           "静态",IDC_LED3,309,226,34,30,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "脉搏:",IDC_STATIC,278,226,27,30,SS_CENTERIMAGE
+    LTEXT           "次/分",IDC_STATIC,351,226,21,30,SS_CENTERIMAGE
+    GROUPBOX        "脉搏参数显示",IDC_STATIC,268,189,114,90
+    LTEXT           "短信中心号码:",IDC_STATIC,559,22,45,8
+    EDITTEXT        IDC_MSGCENTR_TELCODE,605,20,85,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置",IDC_SET_MSGCENTR_TELCODE,697,19,39,14
+    LTEXT           "电话:",IDC_STATIC,562,49,16,8
+    LTEXT           "来自:",IDC_STATIC,651,48,17,8
+    EDITTEXT        IDC_SENDMSG_TELCODE,579,48,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RECVMSG_TELCODE,669,47,61,12,ES_AUTOHSCROLL
+    LTEXT           "短信内容：",IDC_STATIC,561,62,39,8
+    LTEXT           "短信内容：",IDC_STATIC,651,62,40,8
+    EDITTEXT        IDC_EDIT_SENDMSG,561,75,76,73,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_DISP_RECVMSG,652,75,78,89,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "发送区",IDC_STATIC,556,35,86,133
+    GROUPBOX        "接收区",IDC_STATIC,647,35,89,133
+    GROUPBOX        "IP地址请求回复区",IDC_STATIC,552,7,188,167
+    PUSHBUTTON      "初始化SMS",IDC_INITSMS,560,150,78,14
+    EDITTEXT        IDC_STATE,556,189,180,90,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "状态显示区",IDC_STATIC,552,179,188,105
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <ansleliu>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "AnsleServer.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "AnsleServer.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_ANSLESERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 740
+        VERTGUIDE, 13
+        VERTGUIDE, 20
+        VERTGUIDE, 42
+        VERTGUIDE, 52
+        VERTGUIDE, 67
+        VERTGUIDE, 102
+        VERTGUIDE, 106
+        VERTGUIDE, 126
+        VERTGUIDE, 153
+        VERTGUIDE, 190
+        VERTGUIDE, 198
+        VERTGUIDE, 232
+        VERTGUIDE, 237
+        VERTGUIDE, 389
+        VERTGUIDE, 396
+        VERTGUIDE, 401
+        VERTGUIDE, 449
+        VERTGUIDE, 462
+        VERTGUIDE, 480
+        VERTGUIDE, 540
+        VERTGUIDE, 727
+        VERTGUIDE, 730
+        VERTGUIDE, 736
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 284
+        HORZGUIDE, 26
+        HORZGUIDE, 164
+        HORZGUIDE, 168
+        HORZGUIDE, 174
+        HORZGUIDE, 179
+        HORZGUIDE, 189
+        HORZGUIDE, 271
+        HORZGUIDE, 279
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 AnsleServer(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\AnsleServer.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

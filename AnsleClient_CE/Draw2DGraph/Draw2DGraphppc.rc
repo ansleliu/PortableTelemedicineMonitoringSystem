@@ -1,0 +1,269 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resourceppc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resourceppc.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Draw2DGraphppc.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Draw2DGraph.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DRAW2DGRAPH_DIALOG DIALOG  0, 0, 319, 165
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW | 0x80000000L
+CAPTION "远程医疗监护--客户端"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "静态",IDC_LED,53,104,25,16,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    LTEXT           "静态",IDC_LED1,126,104,18,16,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    LTEXT           "收缩压:",IDC_STATIC,12,104,36,16,SS_CENTERIMAGE
+    LTEXT           "舒张压:",IDC_STATIC,92,104,28,16,SS_CENTERIMAGE
+    GROUPBOX        "血压显示区",IDC_STATIC,4,94,154,32
+    LTEXT           "血氧饱和度:",IDC_STATIC,13,135,47,18,SS_CENTERIMAGE
+    LTEXT           "脉搏:",IDC_STATIC,92,135,28,18,SS_CENTERIMAGE
+    LTEXT           "静态",IDC_LED2,60,135,18,18,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    LTEXT           "静态",IDC_LED3,126,135,18,18,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    GROUPBOX        "脉搏血氧显示区",IDC_STATIC,4,126,154,35
+    PUSHBUTTON      "开始监控",IDC_START,168,104,45,28
+    PUSHBUTTON      "远程模式",IDC_REMOTEMODE,168,134,45,24
+    PUSHBUTTON      "心电显示",IDC_ECG,222,110,39,21
+    PUSHBUTTON      "血压显示",IDC_BOOLPRESSURE,265,110,41,21
+    PUSHBUTTON      "血氧显示",IDC_SPO2,222,135,39,20
+    PUSHBUTTON      "脉搏显示",IDC_PULSE,265,135,41,20
+    GROUPBOX        "生理参数显示选择区",IDC_STATIC,217,100,93,58
+    GROUPBOX        "操作区",IDC_STATIC,164,94,152,67
+END
+
+IDD_DIALOG1 DIALOG  0, 0, 321, 165
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "远程模式配置"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,169,145,50,15
+    PUSHBUTTON      "取消",IDCANCEL,247,145,50,15
+    LTEXT           "短信中心:",IDC_STATIC,160,13,36,8
+    EDITTEXT        IDC_MSGCENTR_TELCODE,204,12,71,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置",IDC_SET_MSGCENTR_TELCODE,282,11,29,14
+    LTEXT           "号码",IDC_STATIC,160,41,17,8
+    EDITTEXT        IDC_SENDMSG_TELCODE,179,39,49,12,ES_AUTOHSCROLL
+    LTEXT           "短信内容:",IDC_STATIC,160,55,37,8
+    EDITTEXT        IDC_EDIT_SENDMSG,160,67,68,25,ES_AUTOHSCROLL
+    PUSHBUTTON      "发送",IDC_SENDMSG,160,95,68,18
+    LTEXT           "号码",IDC_STATIC,236,42,17,8
+    EDITTEXT        IDC_RECVMSG_TELCODE,253,39,53,12,ES_AUTOHSCROLL
+    LTEXT           "短信内容:",IDC_STATIC,236,55,37,8
+    EDITTEXT        IDC_DISP_RECVMSG,236,67,70,64,ES_AUTOHSCROLL
+    GROUPBOX        "接收IP地址",IDC_STATIC,232,27,79,109
+    EDITTEXT        IDC_EDIT_STATUS,8,69,134,86,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "主机地址：",IDC_STATIC,12,15,42,8
+    LTEXT           "主机端口：",IDC_STATIC,12,39,50,8
+    EDITTEXT        IDC_EDIT_REMOTEHOST,12,25,124,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REMOTEPORT,12,50,124,12,ES_AUTOHSCROLL
+    GROUPBOX        "状态显示区",IDC_STATIC,2,2,145,158
+    GROUPBOX        "",IDC_STATIC,8,9,134,56
+    PUSHBUTTON      "初始化SMS",IDC_INITSMS,160,114,68,17
+    GROUPBOX        "发送请求短信",IDC_STATIC,156,27,76,109
+    GROUPBOX        "服务器IP地址请求区",IDC_STATIC,151,2,160,139
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Draw2DGraph.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Draw2DGraph.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DRAW2DGRAPH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 316
+        VERTGUIDE, 12
+        VERTGUIDE, 20
+        VERTGUIDE, 48
+        VERTGUIDE, 53
+        VERTGUIDE, 60
+        VERTGUIDE, 78
+        VERTGUIDE, 92
+        VERTGUIDE, 120
+        VERTGUIDE, 126
+        VERTGUIDE, 144
+        VERTGUIDE, 158
+        VERTGUIDE, 164
+        VERTGUIDE, 168
+        VERTGUIDE, 213
+        VERTGUIDE, 217
+        VERTGUIDE, 222
+        VERTGUIDE, 261
+        VERTGUIDE, 265
+        VERTGUIDE, 306
+        VERTGUIDE, 310
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 161
+        HORZGUIDE, 94
+        HORZGUIDE, 100
+        HORZGUIDE, 109
+        HORZGUIDE, 116
+        HORZGUIDE, 120
+        HORZGUIDE, 126
+        HORZGUIDE, 135
+        HORZGUIDE, 153
+        HORZGUIDE, 159
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 317
+        VERTGUIDE, 8
+        VERTGUIDE, 12
+        VERTGUIDE, 136
+        VERTGUIDE, 142
+        VERTGUIDE, 147
+        VERTGUIDE, 151
+        VERTGUIDE, 156
+        VERTGUIDE, 160
+        VERTGUIDE, 228
+        VERTGUIDE, 232
+        VERTGUIDE, 236
+        VERTGUIDE, 282
+        VERTGUIDE, 306
+        VERTGUIDE, 311
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 160
+        HORZGUIDE, 131
+        HORZGUIDE, 136
+        HORZGUIDE, 141
+        HORZGUIDE, 145
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Draw2DGraphppc.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
